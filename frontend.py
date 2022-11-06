@@ -110,7 +110,7 @@ while True:
             window.close()
     import pandas as pd
 
-    our_db = pd.read_csv("OUR DB - Alphabet.csv")
+    our_db = pd.read_csv("CO2_passenger_cars_cleaned.csv")
     our_db["Model"] = our_db["Mk"] + " -- " + our_db["Cn"]
     our_db["em"] = our_db["e (g/km)"] / 1000
     # our_db.sort_values(by="Model")
